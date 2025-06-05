@@ -1,0 +1,31 @@
+version: '2.28.1'
+   
+services:
+  backend:
+    build: 
+     context: ./backend
+    command: python manage runserver
+    ports:
+     - "8000:443"
+
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - react_build:/frontend/build
+      
+  # nginx:
+  #   image: nginx:latest
+  #   ports:
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+  #     - react_build:/var/www/react
+  #     - ./nginx/development.crt:/etc/nginx/development.crt:ro
+  #     - ./nginx/development.key:/etc/nginx/development.key:ro
+  #   depends_on:
+  #     #- backend
+  #     - frontend
+volumes:
+  react_build:
+    

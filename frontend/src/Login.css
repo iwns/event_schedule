@@ -1,0 +1,101 @@
+.body-login {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.container-login {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  background-color: #ffffff;
+  position: relative;
+  pointer-events: none; /* Disable pointer events on the entire container */
+}
+
+.left-section{
+  flex: 1;
+  pointer-events: auto; /* Enable pointer events only on sections with interactive content */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+
+form {
+  margin-bottom: 10px; /* Decreased the margin below the form */
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="username"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Decreased the margin below the input fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  pointer-events: auto; /* Enable pointer events on form elements */
+}
+
+#button-loginn {
+  width: 86%;
+  padding: 12px;
+  background-color: #42a6b8;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  pointer-events: auto; /* Enable pointer events on button-logins */
+}
+
+.forgot-password {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 0; /* Decreased the margin below the "Forgot password" link */
+}
+
+.bottom-right {
+  font-size: 14px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0; /* Added margin-top to control space above this section */
+}
+
+.bottom-right p {
+  margin-right: 5px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.right-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}

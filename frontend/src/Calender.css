@@ -1,0 +1,127 @@
+/* Calendar.css */
+.calendar {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #3182ce;
+  color: white;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.calendar-header button:hover {
+  background-color: rgba(216, 100, 100, 0.863);
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.days-row {
+  display: flex;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.day-name {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.calendar-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.calendar-cell {
+  flex: 1;
+  min-height: 80px;
+  padding: 5px;
+  border-right: 1px solid #eee;
+  cursor: pointer;
+}
+
+.calendar-cellevent {
+  background-color:#f969f9;
+  flex: 1;
+  min-height: 80px;
+  padding: 5px;
+  border-right: 1px solid #eee;
+  cursor: pointer;
+}
+
+.calendar-cell:hover {
+  background-color: #f9f9f9;
+}
+
+.calendar-cell.today {
+  background-color: #ebf8ff;
+}
+
+.empty-cell {
+  flex: 1;
+  min-height: 80px;
+  background-color: #fafafa;
+  border-right: 1px solid #eee;
+}
+
+.day-number {
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.day-numberevent {
+  color:rgb(246, 242, 247);
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.events {
+  overflow-y: auto;
+  max-height: 60px;
+}
+
+.event {
+  font-size: 0.8rem;
+  padding: 2px 5px;
+  margin: 2px 0;
+  border-radius: 3px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.event:hover {
+  opacity: 0.9;
+}
